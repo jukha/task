@@ -1,0 +1,69 @@
+:root {
+  --ff-primary: "Raleway", sans-serif;
+  --clr-neutral: #fff;
+}
+body {
+  font-family: var(--ff-primary);
+}
+/* ============== */
+/* COMMON CSS     */
+/* =============  */
+.para {
+  font-family: var(--ff-primary);
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 30px;
+  text-align: center;
+  color: var(--clr-neutral);
+}
+
+.topHeader {
+  min-height: 932px;
+  background: url(../assets/hero-bg.png);
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  border: solid;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.navbar-expand-lg .navbar-nav .nav-link {
+  font-family: var(--ff-primary);
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  color: var(--clr-neutral);
+  padding-left: 28px;
+  padding-right: 28px;
+}
+.hero {
+  font-family: var(--ff-primary);
+  color: var(--clr-neutral);
+}
+.tagline {
+  font-style: normal;
+  font-weight: 900;
+  font-size: 80px;
+  line-height: 94px;
+  text-align: center;
+  text-transform: capitalize;
+  position: relative;
+}
+.tagline::after {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  bottom: -18px;
+  height: 2px;
+  width: 108px;
+  background: var(--clr-neutral);
+  left: 50%;
+  transform: translateX(-50%);
+}
+.hero .para {
+  max-width: 933px;
+  margin-inline:auto;
+  margin-top: 40px;
+}
